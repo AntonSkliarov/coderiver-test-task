@@ -1,2 +1,2 @@
 (this["webpackJsonpreact-app"]=this["webpackJsonpreact-app"]||[]).push([[0],[,,,,,,,,,function(e,t,c){},function(e,t,c){},function(e,t,c){},function(e,t,c){"use strict";c.r(t);var n=c(0),r=(c(1),c(3)),s=c.n(r),i=(c(9),c(10),c(11),function(){return Object(n.jsxs)("div",{className:"sidenav",children:[Object(n.jsx)("a",{href:"#/",children:"About"}),Object(n.jsx)("a",{href:"#/",children:"Services"}),Object(n.jsx)("a",{href:"#/",children:"Clients"}),Object(n.jsx)("a",{href:"#/",children:"Contact"})]})});s.a.render(Object(n.jsx)(i,{}),document.getElementById("root"))}],[[12,1,2]]]);
-//# sourceMappingURL=main.5763fde2.chunk.js.map
+//# sourceMappingURL=main.df798448.chunk.js.map
