@@ -1,24 +1,11 @@
 import React from 'react';
-import './App.scss';
-import { Switch, Link, Route } from 'react-router-dom';
+import './App.sass';
 
 export const App = () => (
-  <div>
-    React starter pack
-    <div>
-      <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="/users">Users</Link>
-      </nav>
-
-      <Switch>
-        <Route path="/users">
-          <div>Users page</div>
-        </Route>
-        <Route path="/">
-          <div>Home page</div>
-        </Route>
-      </Switch>
-    </div>
+  <div className="sidenav">
+    <a href="#/">About</a>
+    <a href="#/">Services</a>
+    <a href="#/">Clients</a>
+    <a href="#/">Contact</a>
   </div>
 );
