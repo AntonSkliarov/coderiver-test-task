@@ -2,10 +2,25 @@ import React from 'react';
 import './App.sass';
 
 export const App = () => (
-  <div className="sidenav">
-    <a href="#/">About</a>
-    <a href="#/">Services</a>
-    <a href="#/">Clients</a>
-    <a href="#/">Contact</a>
-  </div>
+  <>
+    <aside className="sidebar">
+      <h2>Your Profit</h2>
+      <img src="" alt="" />
+    </aside>
+
+    {/* <div>
+      <a href="#/">Profit</a>
+      <a href="#/">Explore</a>
+      <a href="#/">Profile</a>
+      <a href="#/">Photos</a>
+      <a href="#/">Videos</a>
+      <a href="#/">Invite</a>
+      <a href="#/">Music</a>
+      <a href="#/">Candidates</a>
+      <a href="#/">Calendar</a>
+      <a href="#/">Feedback</a>
+      <a href="#/">Help</a>
+      <input type="text" placeholder="Search" />
+    </div> */}
+  </>
 );
