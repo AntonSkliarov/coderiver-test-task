@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.sass';
+import { SideBar } from './components/SideBar/SideBar';
+import { usersSidebar } from './js/sidebarUsers';
 
 export const App = () => (
   <>
-    <aside className="sidebar">
-      <h2>Your Profit</h2>
-      <img src="" alt="" />
-    </aside>
+    <SideBar users={usersSidebar} />
 
     {/* <div>
       <a href="#/">Profit</a>
