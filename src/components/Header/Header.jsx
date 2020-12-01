@@ -2,29 +2,37 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Header.sass';
 
-export function Header({ users, selectedUserId }) {
+export function Header({ selectedUser }) {
+  const { name, surname } = selectedUser;
+  const fullName = `${name} ${surname.slice(0, 1)}.`;
+
   return (
     <div className="header">
       <div>
         <h2 className="header__title">Your Profit</h2>
       </div>
 
-      <div className="header__user-info">
-        <img className="header__user-photo" src="" alt="" />
-        <p className="header__user-name">JJ</p>
-        <p className="header__user-role">Admin</p>
+      <div className="header__current-user">
+        <img
+          className="header__user-photo"
+          src={selectedUser.image}
+          alt=""
+        />
+        <div className="header__user-info">
+          <p className="header__user-name">{fullName}</p>
+          <p className="header__user-role">{selectedUser.role}</p>
+        </div>
       </div>
     </div>
   );
 }
 
 Header.propTypes = {
-  selectedUserId: PropTypes.number.isRequired,
-  users: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      id: PropTypes.number.isRequired,
-    }).isRequired,
-  ).isRequired,
+  selectedUser: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    surname: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
 };
