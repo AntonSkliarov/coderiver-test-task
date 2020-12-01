@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import className from 'classnames';
 import PropTypes from 'prop-types';
 import './SideBar.sass';
 import { Navigation } from '../Navigation/Navigation';
 
-export function SideBar({ users }) {
-  const [selectedUserId] = useState(2);
-
+export function SideBar({ users, selectedUserId }) {
   return (
     <>
       <aside className="sidebar">
@@ -45,6 +43,7 @@ export function SideBar({ users }) {
 }
 
 SideBar.propTypes = {
+  selectedUserId: PropTypes.number.isRequired,
   users: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

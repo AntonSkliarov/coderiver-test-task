@@ -6,7 +6,7 @@ export function Navigation() {
     <>
       <nav className="navigation sidebar__navigation">
         <div className="navigation__container">
-          <h2 className="navigation__menu-title">Menu</h2>
+          <h3 className="navigation__menu-title">Menu</h3>
           <ul className="navigation__menu-list">
             <li
               className="navigation__menu-item
