@@ -64,11 +64,13 @@ export function Navigation() {
             </li>
           </ul>
         </div>
-        <input
-          className="navigation__input-search"
-          type="text"
-          placeholder="Search"
-        />
+        <div className="navigation__input-search-wrapper">
+          <input
+            className="navigation__input-search"
+            type="text"
+            placeholder="Search"
+          />
+        </div>
       </nav>
     </>
   );

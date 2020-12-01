@@ -3,6 +3,9 @@ import className from 'classnames';
 import PropTypes from 'prop-types';
 import './SideBar.sass';
 import { Navigation } from '../Navigation/Navigation';
+import { SettingsButton } from '../SettingsButton';
+import { GridButton } from '../GridButton';
+import { UserFriends } from '../UserFriends';
 
 export function SideBar({ users, selectedUserId }) {
   return (
@@ -21,24 +24,23 @@ export function SideBar({ users, selectedUserId }) {
                 <img
                   title={users.name}
                   src={user.image}
-                  alt="User"
+                  alt={users.name}
                 />
               </button>
             </div>
           ))}
 
-          <div className="sidebar__service-buttons">
-            <div className="grid-button sidebar__grid-button" />
-            <div className="settings-button sidebar__settings-button" />
+          <div className="sidebar__service-buttons-wrapper">
+            <div className="sidebar__service-buttons">
+              <GridButton />
+              <SettingsButton />
+            </div>
           </div>
         </div>
 
-        <div className="sidebar__active-menu">
+        <div className="sidebar__menu">
           <Navigation />
-
-          <div className="friends">
-            <div className="friend">FRIEND</div>
-          </div>
+          <UserFriends />
         </div>
       </aside>
     </>

@@ -8,6 +8,7 @@
   background-color: #1d2531
   display: flex
 
+
   &__users-buttons
     width: 100px
 
@@ -38,24 +39,22 @@
       border-radius: 2px
       background: #2399f1
 
-
-  &__grid-button
-    background: url('../../images/service-icons/Grid.png')
-    height: 16px
-    width: 16px
-    cursor: pointer
-
-  &__settings-button
-    background: url('../../images/service-icons/Settings.png')
-    height: 16px
-    width: 16px
-    cursor: pointer
+  &__service-buttons-wrapper
+    position: relative
 
   &__service-buttons
-    display: flex
-    justify-content: space-between
+    height: 16px
     margin: 0 26px
+    position: fixed
+    bottom: 20px
+    display: flex
 
-  &__active-menu
+  &__grid-button
+    margin-right: 16px
+
+  &__menu
     background: #222c3c
     width: 250px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
