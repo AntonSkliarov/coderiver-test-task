@@ -7,7 +7,7 @@ import { SettingsButton } from '../SettingsButton';
 import { GridButton } from '../GridButton';
 import { UserFriends } from '../UserFriends';
 
-export function SideBar({ users, selectedUserId }) {
+export function SideBar({ users, selectedUser }) {
   return (
     <>
       <aside className="sidebar">
@@ -16,7 +16,7 @@ export function SideBar({ users, selectedUserId }) {
             <div
               className={className('sidebar__user-button-wrapper', {
                 'sidebar__user-button-wrapper--active':
-                  selectedUserId === user.id,
+                  selectedUser.id === user.id,
               })}
               key={user.id}
             >
@@ -32,14 +32,14 @@ export function SideBar({ users, selectedUserId }) {
 
           <div className="sidebar__service-buttons-wrapper">
             <div className="sidebar__service-buttons">
-              <GridButton />
+              <GridButton markForClass="mark" />
               <SettingsButton />
             </div>
           </div>
         </div>
 
         <div className="sidebar__menu">
-          <Navigation />
+          <Navigation newInvitations={selectedUser.newInvitations} />
           <UserFriends />
         </div>
       </aside>
@@ -48,7 +48,10 @@ export function SideBar({ users, selectedUserId }) {
 }
 
 SideBar.propTypes = {
-  selectedUserId: PropTypes.number.isRequired,
+  selectedUser: PropTypes.shape({
+    newInvitations: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
   users: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

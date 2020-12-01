@@ -11,6 +11,7 @@ export const initialUsers = [
     image: bobImage,
     role: 'user',
     id: 1,
+    newInvitations: 0,
   },
   {
     name: 'Jordan',
@@ -18,6 +19,7 @@ export const initialUsers = [
     image: jordanImage,
     role: 'Administrator',
     id: 2,
+    newInvitations: 54,
   },
   {
     name: 'Melisa',
@@ -25,6 +27,7 @@ export const initialUsers = [
     image: melisaImage,
     role: 'user',
     id: 3,
+    newInvitations: 0,
   },
   {
     name: 'Jesica',
@@ -32,6 +35,7 @@ export const initialUsers = [
     image: jesicaImage,
     role: 'user',
     id: 4,
+    newInvitations: 0,
   },
   {
     name: 'Sarah',
@@ -39,5 +43,15 @@ export const initialUsers = [
     image: sarahImage,
     role: 'user',
     id: 5,
+    newInvitations: 0,
   },
 ];
+
+export const initialUser = {
+  name: 'Jordan',
+  surname: 'Jackson',
+  image: jordanImage,
+  role: 'Administrator',
+  id: 2,
+  newInvitations: 54,
+};

@@ -19,23 +19,16 @@
     font-size: 14px
     line-height: 36px
     padding-left: 30px
+    display: flex
+    justify-content: space-between
 
     &--active
       background-color: #313d4f
       pointer-events: none
 
-  &__menu-link
+  &__menu-item-link
     text-decoration: none
     color: #f2f2f3
-
-    &--notifications::after
-      content: "54"
-      display: inline-block
-      justify-content: end
-      padding: 0 8px
-      border-radius: 12px
-      line-height: 24px
-      background-color: #2b9ef6
 
   &__input-search-wrapper::after
     content: ""
@@ -54,10 +47,17 @@
     border-bottom: 1px solid #313d4f
     line-height: 35px
 
-
-
     &::placeholder
       color: #5b6779
       font-size: 14px
 
+  &__new-invitations
+    font-size: 14px
+    padding: 0 9px
+    border-radius: 12px
+    height: 24px
+    background-color: #2b9ef6
+    color: #fff
+    margin-right: 30px
+    line-height: 24px
 
