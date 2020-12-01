@@ -6,27 +6,26 @@ html
 body
   background: #eff3f6
 
-// .user-icon
-//   height: 50px
-//   width: 50px
+.container
+  display: grid
+  grid-template-columns: 350px auto 350px
+  grid-template-areas: "sidebar header header""sidebar chart user-details""sidebar statistic user-details""sidebar referrer user-events"
 
-//   a
-//     padding: 6px 8px 6px 16px
-//     text-decoration: none
-//     font-size: 25px
-//     color: #eff0f1
-//     display: block
+.chart
+  grid-area: chart
 
-//     &:hover
-//       color: white
+.statistic
+  grid-area: statistic
+  background-color: yellow
 
-// .main
-//   margin-left: 160px
-//   padding: 0px 10px
+.referrer
+  grid-area: referrer
+  background-color: green
 
-// @media screen and (max-height: 450px)
-//   .sidenav
-//     padding-top: 15px
+.user-details
+  grid-area: user-details
+  background-color: blue
 
-//     a
-//       font-size: 18px
+.user-events
+  grid-area: user-events
+  background-color: pink

@@ -10,8 +10,15 @@ export function App() {
 
   return (
     <body className="App">
-      <SideBar users={users} selectedUserId={selectedUserId} />
-      <Header users={users} selectedUserId={selectedUserId} />
+      <div className="container">
+        <SideBar users={users} selectedUserId={selectedUserId} />
+        <Header users={users} selectedUserId={selectedUserId} />
+        <div className="chart">CHART</div>
+        <div className="statistic">STATISTIC</div>
+        <div className="referrer">REFERRER</div>
+        <div className="user-details">USER DETAILS</div>
+        <div className="user-events">USER EVENTS</div>
+      </div>
     </body>
   );
 }

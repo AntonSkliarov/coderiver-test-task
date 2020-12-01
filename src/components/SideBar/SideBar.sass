@@ -1,27 +1,36 @@
 .sidebar
   height: 100%
   position: fixed
+  width: 350px
 
   top: 0
   left: 0
   background-color: #1d2531
   display: flex
 
-  &__users-icons
+  &__users-buttons
     width: 100px
 
-  &__user-icon
+  &__user-button
+    height: 50px
+    width: 50px
+    border-radius: 25px
+    border: none
+    background: none
+    padding: 0
+    cursor: pointer
+
+  &__user-button-wrapper
     list-style: none
     margin: 30px 25px
     height: 50px
     width: 50px
-    cursor: pointer
     position: relative
 
     &--active::before
       content: ""
       position: absolute
-      left: -25px
+      left: -27px
       top: 25px
       display: inline-block
       width: 4px

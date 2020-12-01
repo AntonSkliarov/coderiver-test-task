@@ -8,19 +8,22 @@ export function SideBar({ users, selectedUserId }) {
   return (
     <>
       <aside className="sidebar">
-        <div className="sidebar__users-icons">
+        <div className="sidebar__users-buttons">
           {users.map(user => (
             <div
-              className={className('sidebar__user-icon', {
-                'sidebar__user-icon--active': selectedUserId === user.id,
+              className={className('sidebar__user-button-wrapper', {
+                'sidebar__user-button-wrapper--active':
+                  selectedUserId === user.id,
               })}
               key={user.id}
             >
-              <img
-                title={users.name}
-                src={user.image}
-                alt="User"
-              />
+              <button className="sidebar__user-button" type="button">
+                <img
+                  title={users.name}
+                  src={user.image}
+                  alt="User"
+                />
+              </button>
             </div>
           ))}
 
