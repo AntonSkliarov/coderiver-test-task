@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f5cd190.chunk.css",
-    "main.js": "/static/js/main.73c407b4.chunk.js",
-    "main.js.map": "/static/js/main.73c407b4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8e4aa085.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8e4aa085.js.map",
-    "static/js/2.7b8a00d4.chunk.js": "/static/js/2.7b8a00d4.chunk.js",
-    "static/js/2.7b8a00d4.chunk.js.map": "/static/js/2.7b8a00d4.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.6f5cd190.chunk.css.map": "/static/css/main.6f5cd190.chunk.css.map",
-    "static/js/2.7b8a00d4.chunk.js.LICENSE.txt": "/static/js/2.7b8a00d4.chunk.js.LICENSE.txt",
-    "static/media/fonts.sass": "/static/media/SourceSansPro-Semibold.1f6134fb.ttf",
-    "static/media/chart.dd75a31a.png": "/static/media/chart.dd75a31a.png",
-    "static/media/jordan.7db5eee2.png": "/static/media/jordan.7db5eee2.png"
+    "main.css": "/coderiver-test-task/static/css/main.f6986b10.chunk.css",
+    "main.js": "/coderiver-test-task/static/js/main.73c407b4.chunk.js",
+    "main.js.map": "/coderiver-test-task/static/js/main.73c407b4.chunk.js.map",
+    "runtime-main.js": "/coderiver-test-task/static/js/runtime-main.54da4b68.js",
+    "runtime-main.js.map": "/coderiver-test-task/static/js/runtime-main.54da4b68.js.map",
+    "static/js/2.7b8a00d4.chunk.js": "/coderiver-test-task/static/js/2.7b8a00d4.chunk.js",
+    "static/js/2.7b8a00d4.chunk.js.map": "/coderiver-test-task/static/js/2.7b8a00d4.chunk.js.map",
+    "index.html": "/coderiver-test-task/index.html",
+    "static/css/main.f6986b10.chunk.css.map": "/coderiver-test-task/static/css/main.f6986b10.chunk.css.map",
+    "static/js/2.7b8a00d4.chunk.js.LICENSE.txt": "/coderiver-test-task/static/js/2.7b8a00d4.chunk.js.LICENSE.txt",
+    "static/media/fonts.sass": "/coderiver-test-task/static/media/SourceSansPro-Semibold.1f6134fb.ttf",
+    "static/media/chart.dd75a31a.png": "/coderiver-test-task/static/media/chart.dd75a31a.png",
+    "static/media/jordan.7db5eee2.png": "/coderiver-test-task/static/media/jordan.7db5eee2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e4aa085.js",
+    "static/js/runtime-main.54da4b68.js",
     "static/js/2.7b8a00d4.chunk.js",
-    "static/css/main.6f5cd190.chunk.css",
+    "static/css/main.f6986b10.chunk.css",
     "static/js/main.73c407b4.chunk.js"
   ]
 }
