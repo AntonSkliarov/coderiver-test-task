@@ -7,6 +7,7 @@ import { Chart } from './components/Chart';
 import { StatisticCards } from './components/StatisticCards';
 import { Referrer } from './components/Referrer';
 import { UserDetails } from './components/UserDetails';
+import { UserEvents } from './components/UserEvents/UserEvents';
 
 export function App() {
   const [selectedUser] = useState(initialUser);
@@ -20,7 +21,7 @@ export function App() {
       <StatisticCards selectedUser={selectedUser} />
       <Referrer />
       <UserDetails selectedUser={selectedUser} />
-      <div className="user-events">USER EVENTS</div>
+      <UserEvents selectedUser={selectedUser} />
     </div>
   );
 }

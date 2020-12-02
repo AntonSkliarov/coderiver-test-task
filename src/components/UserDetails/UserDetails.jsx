@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './UserDetails.sass';
 import userBackground from '../../images/user-background/user-background.jpg';
+import limitImg from '../../images/paidout-limit/paidout-limit.png';
 
 export function UserDetails({ selectedUser }) {
   return (
@@ -58,39 +59,54 @@ export function UserDetails({ selectedUser }) {
           <h4 className="user-details__additional-info-paid-out-title">
             Paid Out Limit
           </h4>
-          <div>
-            <img src="" alt="" />
-            <span>$580</span>
-            <span>$750</span>
+          <div className="user-details__additional-info-paid-out-wrapper">
+            <img
+              className="user-details__additional-info-paid-out-image"
+              src={limitImg}
+              alt="Limit statistic line"
+            />
+            <span className="user-details__paid-out-limit-numbers
+              user-details__paid-out-limit-numbers--blue"
+            >
+              $580
+            </span>
+            <span className="user-details__paid-out-limit-numbers">/$750</span>
           </div>
         </div>
 
         <div className="user-details__additional-info-bio">
           <h4 className="user-details__additional-info-bio-title">Bio</h4>
-          <p>
-            Jordan graduated from Cornell University in 2004
-            with a Bachelor degree in computer science and a
+          <p className="user-details__additional-info-bio-text">
+            Jordan graduated from Cornell University in 2004 with
+            a Bachelor degree in computer science and a
             specialization in mathematics. While there, he
             published two articles on Code-project.
           </p>
         </div>
 
         <div className="user-details__additional-info-skills">
-          <h4>Skill Level</h4>
-          <div>
-            <span>Photography</span>
-          </div>
-          <div>
-            <span>Teacher</span>
-          </div>
-          <div>
-            <span>Traveler</span>
-          </div>
-          <div>
-            <span>iOS</span>
+          <h4 className="user-details__additional-info-skills-title">
+            Skills
+          </h4>
+
+          <div className="user-details__additional-info-skills-wrapper">
+            <div className="user-details__additional-info-skills-photography">
+              <span>Photography</span>
+            </div>
+
+            <div className="user-details__additional-info-skills-teacher">
+              <span>Teacher</span>
+            </div>
+
+            <div className="user-details__additional-info-skills-traveler">
+              <span>Traveler</span>
+            </div>
+
+            <div className="user-details__additional-info-skills-ios">
+              <span>iOS</span>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   );
