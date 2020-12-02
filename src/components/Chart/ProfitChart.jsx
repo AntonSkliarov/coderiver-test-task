@@ -1,8 +1,8 @@
 import React from 'react';
-import './Chart.sass';
+import './ProfitChart.sass';
 import chart from '../../images/chart/chart.png';
 
-export function Chart() {
+export function ProfitChart() {
   return (
     <img
       className="chart"

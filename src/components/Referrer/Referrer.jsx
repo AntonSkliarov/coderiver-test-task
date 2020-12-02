@@ -9,10 +9,12 @@ export function Referrer() {
         <thead className="referrer__table-header">
           <tr>
             <th className="referrer__table-name">Referrer</th>
-            <th className="referrer__table-header-column-name">Views</th>
-            <th className="referrer__table-header-column-name">Sales</th>
-            <th className="referrer__table-header-column-name">Conversion</th>
-            <th className="referrer__table-header-column-name">Total</th>
+            <th className="referrer__table-header-column-views">Views</th>
+            <th className="referrer__table-header-column-sales">Sales</th>
+            <th className="referrer__table-header-column-conversion">
+              Conversion
+            </th>
+            <th className="referrer__table-header-column-total">Total</th>
           </tr>
         </thead>
         <tbody className="referrer__table-body">

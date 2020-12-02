@@ -18,7 +18,7 @@ export function UserEvents({ selectedUser }) {
             </p>
           </div>
 
-          <div>
+          <div className="user-events__event-icon">
             <span className="user-events__event-photography">Photography</span>
           </div>
         </div>
@@ -31,7 +31,7 @@ export function UserEvents({ selectedUser }) {
             </p>
           </div>
 
-          <div>
+          <div className="user-events__event-icon">
             <span className="user-events__event-design">Design</span>
           </div>
         </div>

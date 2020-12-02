@@ -3,7 +3,7 @@ import './App.sass';
 import { SideBar } from './components/SideBar/SideBar';
 import { initialUsers, initialUser } from './js/sidebarUsers';
 import { Header } from './components/Header';
-import { Chart } from './components/Chart';
+import { ProfitChart } from './components/Chart';
 import { StatisticCards } from './components/StatisticCards';
 import { Referrer } from './components/Referrer';
 import { UserDetails } from './components/UserDetails';
@@ -18,7 +18,7 @@ export function App() {
       <SideBar users={users} selectedUser={selectedUser} />
       <Header selectedUser={selectedUser} />
       <main className="main">
-        <Chart />
+        <ProfitChart />
         <StatisticCards selectedUser={selectedUser} />
         <Referrer />
       </main>
