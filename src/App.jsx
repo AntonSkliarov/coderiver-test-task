@@ -4,7 +4,8 @@ import { SideBar } from './components/SideBar/SideBar';
 import { initialUsers, initialUser } from './js/sidebarUsers';
 import { Header } from './components/Header';
 import { Chart } from './components/Chart';
-import { StatisticCards } from './components/StatisticCards/StatisticCards';
+import { StatisticCards } from './components/StatisticCards';
+import { Referrer } from './components/Referrer';
 
 export function App() {
   const [selectedUser] = useState(initialUser);
@@ -16,7 +17,7 @@ export function App() {
       <Header selectedUser={selectedUser} />
       <Chart />
       <StatisticCards selectedUser={selectedUser} />
-      <div className="referrer">REFERRER</div>
+      <Referrer />
       <div className="user-details">USER DETAILS</div>
       <div className="user-events">USER EVENTS</div>
     </div>
