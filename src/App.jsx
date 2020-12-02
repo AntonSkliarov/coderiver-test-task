@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { Chart } from './components/Chart';
 import { StatisticCards } from './components/StatisticCards';
 import { Referrer } from './components/Referrer';
+import { UserDetails } from './components/UserDetails';
 
 export function App() {
   const [selectedUser] = useState(initialUser);
@@ -18,7 +19,7 @@ export function App() {
       <Chart />
       <StatisticCards selectedUser={selectedUser} />
       <Referrer />
-      <div className="user-details">USER DETAILS</div>
+      <UserDetails selectedUser={selectedUser} />
       <div className="user-events">USER EVENTS</div>
     </div>
   );
