@@ -59,8 +59,7 @@ export function Navigation({ newInvitations }) {
 
             <li className="navigation__menu-item">
               <a
-                className="navigation__menu-item-link
-                  navigation__menu-item-link--notifications"
+                className="navigation__menu-item-link"
                 href="#invite"
               >
                 Invite

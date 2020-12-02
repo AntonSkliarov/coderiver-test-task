@@ -31,7 +31,7 @@ export function StatisticCard({ statistic }) {
       <div className="statistic-card__rate-info">
         <div className="statistic-card__rate-icon">
           <img
-            src={statistic.rate === 'increace'
+            src={statistic.rate === 'increase'
               ? increaseIcon
               : decreaseIcon}
             alt={`${statistic.rate} icon`}

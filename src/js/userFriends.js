@@ -12,6 +12,7 @@ export const userFriends = [
     image: carolineImage,
     position: 'Designer',
     typing: true,
+    unreadMessages: 2,
   },
   {
     name: 'Claire',
@@ -19,7 +20,7 @@ export const userFriends = [
     image: claireImage,
     position: 'Designer',
     typing: false,
-    unreadMessages: 2,
+    unreadMessages: 0,
   },
   {
     name: 'Lina',
@@ -27,6 +28,7 @@ export const userFriends = [
     image: linaImage,
     position: 'Sales Manager',
     typing: false,
+    unreadMessages: 0,
   },
   {
     name: 'Jason',
@@ -34,6 +36,7 @@ export const userFriends = [
     image: jasonImage,
     position: 'CTO',
     typing: false,
+    unreadMessages: 0,
   },
   {
     name: 'Dash',
@@ -41,6 +44,7 @@ export const userFriends = [
     image: dashImage,
     position: 'Design Lead',
     typing: false,
+    unreadMessages: 0,
   },
   {
     name: 'Jessica',
@@ -48,5 +52,6 @@ export const userFriends = [
     image: jessicaImage,
     position: 'Designer',
     typing: false,
+    unreadMessages: 0,
   },
 ];
