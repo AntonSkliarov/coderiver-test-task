@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/coderiver-test-task/static/css/main.2648c283.chunk.css",
-    "main.js": "/coderiver-test-task/static/js/main.1c0d109d.chunk.js",
-    "main.js.map": "/coderiver-test-task/static/js/main.1c0d109d.chunk.js.map",
+    "main.css": "/coderiver-test-task/static/css/main.5e42c432.chunk.css",
+    "main.js": "/coderiver-test-task/static/js/main.86ad7589.chunk.js",
+    "main.js.map": "/coderiver-test-task/static/js/main.86ad7589.chunk.js.map",
     "runtime-main.js": "/coderiver-test-task/static/js/runtime-main.54da4b68.js",
     "runtime-main.js.map": "/coderiver-test-task/static/js/runtime-main.54da4b68.js.map",
     "static/js/2.7b8a00d4.chunk.js": "/coderiver-test-task/static/js/2.7b8a00d4.chunk.js",
     "static/js/2.7b8a00d4.chunk.js.map": "/coderiver-test-task/static/js/2.7b8a00d4.chunk.js.map",
     "index.html": "/coderiver-test-task/index.html",
-    "static/css/main.2648c283.chunk.css.map": "/coderiver-test-task/static/css/main.2648c283.chunk.css.map",
+    "static/css/main.5e42c432.chunk.css.map": "/coderiver-test-task/static/css/main.5e42c432.chunk.css.map",
     "static/js/2.7b8a00d4.chunk.js.LICENSE.txt": "/coderiver-test-task/static/js/2.7b8a00d4.chunk.js.LICENSE.txt",
     "static/media/fonts.sass": "/coderiver-test-task/static/media/SourceSansPro-Semibold.1f6134fb.ttf",
     "static/media/chart.dd75a31a.png": "/coderiver-test-task/static/media/chart.dd75a31a.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.54da4b68.js",
     "static/js/2.7b8a00d4.chunk.js",
-    "static/css/main.2648c283.chunk.css",
-    "static/js/main.1c0d109d.chunk.js"
+    "static/css/main.5e42c432.chunk.css",
+    "static/js/main.86ad7589.chunk.js"
   ]
 }
