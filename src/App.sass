@@ -9,4 +9,8 @@ body
 .container
   display: grid
   grid-template-columns: 350px auto 410px
-  grid-template-areas: "sidebar header header""sidebar chart user-details""sidebar statistic-cards user-details""sidebar referrer user-events"
+  grid-template-areas: "sidebar header header""sidebar main user-details""sidebar main user-details""sidebar main user-events"
+
+  .main
+    grid-area: main
+    margin: 0 auto

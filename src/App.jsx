@@ -17,9 +17,11 @@ export function App() {
     <div className="container">
       <SideBar users={users} selectedUser={selectedUser} />
       <Header selectedUser={selectedUser} />
-      <Chart />
-      <StatisticCards selectedUser={selectedUser} />
-      <Referrer />
+      <main className="main">
+        <Chart />
+        <StatisticCards selectedUser={selectedUser} />
+        <Referrer />
+      </main>
       <UserDetails selectedUser={selectedUser} />
       <UserEvents selectedUser={selectedUser} />
     </div>
