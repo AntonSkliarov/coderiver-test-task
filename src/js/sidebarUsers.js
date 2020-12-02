@@ -3,6 +3,7 @@ import jordanImage from '../images/users-icons-side-bar/jordan.png';
 import melisaImage from '../images/users-icons-side-bar/melisa.png';
 import jesicaImage from '../images/users-icons-side-bar/jesica.png';
 import sarahImage from '../images/users-icons-side-bar/sarah.png';
+import { statistics } from './statistic';
 
 export const initialUsers = [
   {
@@ -20,6 +21,7 @@ export const initialUsers = [
     role: 'Administrator',
     id: 2,
     newInvitations: 54,
+    statistics,
   },
   {
     name: 'Melisa',
@@ -54,4 +56,5 @@ export const initialUser = {
   role: 'Administrator',
   id: 2,
   newInvitations: 54,
+  statistics,
 };
