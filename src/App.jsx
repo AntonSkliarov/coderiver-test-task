@@ -1,24 +1,29 @@
-import React from 'react';
-import './App.scss';
-import { Switch, Link, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import './App.sass';
+import { SideBar } from './components/SideBar/SideBar';
+import { initialUsers, initialUser } from './js/sidebarUsers';
+import { Header } from './components/Header';
+import { ProfitChart } from './components/ProfitChart';
+import { StatisticCards } from './components/StatisticCards';
+import { Referrer } from './components/Referrer';
+import { UserDetails } from './components/UserDetails';
+import { UserEvents } from './components/UserEvents/UserEvents';
 
-export const App = () => (
-  <div>
-    React starter pack
-    <div>
-      <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="/users">Users</Link>
-      </nav>
+export function App() {
+  const [selectedUser] = useState(initialUser);
+  const [users] = useState(initialUsers);
 
-      <Switch>
-        <Route path="/users">
-          <div>Users page</div>
-        </Route>
-        <Route path="/">
-          <div>Home page</div>
-        </Route>
-      </Switch>
+  return (
+    <div className="container">
+      <SideBar users={users} selectedUser={selectedUser} />
+      <Header selectedUser={selectedUser} />
+      <main className="main">
+        <ProfitChart />
+        <StatisticCards selectedUser={selectedUser} />
+        <Referrer />
+      </main>
+      <UserDetails selectedUser={selectedUser} />
+      <UserEvents selectedUser={selectedUser} />
     </div>
-  </div>
-);
+  );
+}

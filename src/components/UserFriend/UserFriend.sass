@@ -1,0 +1,53 @@
+@import '../../initialStyles/vars'
+
+.user-friend
+  display: flex
+  position: relative
+
+  &__item
+    display: flex
+
+    margin-bottom: 20px
+
+  &__button
+    height: 40px
+    width: 40px
+    padding: 0
+    border: none
+    border-radius: 20px
+    margin-right: 13px
+
+    background: none
+    cursor: pointer
+    transition: box-shadow $transition-timer
+    &:hover
+      box-shadow: 0px 0px 5px 4px $hover-shadow-color
+
+  &__image
+    height: 40px
+    width: 40px
+
+  &__name
+    font-size: 14px
+    color: #fff
+
+  &__typing
+    font-size: 14px
+    color: #fff
+
+  &__position
+    font-size: 14px
+    color: #7c8ca5
+
+  &__unreaded-messages
+    position: absolute
+    right: 0
+    top: 8px
+
+    height: 24px
+    width: 24px
+    border-radius: 12px
+
+    color: #fff
+    background-color: $notifications-color
+    text-align: center

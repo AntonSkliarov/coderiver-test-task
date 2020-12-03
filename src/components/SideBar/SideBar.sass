@@ -1,0 +1,78 @@
+@import '../../initialStyles/vars'
+
+.sidebar
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+
+  height: 100%
+  width: 350px
+
+  background-color: $sidebar-background-color
+
+  @media screen and (max-width: 1579px)
+    width: 100px
+
+  &__users-buttons
+    width: 100px
+
+  &__user-button
+    height: 50px
+    width: 50px
+    padding: 0
+    border: none
+    border-radius: 25px
+
+    background: none
+    cursor: pointer
+    transition: box-shadow $transition-timer
+    &:hover
+      box-shadow: 0px 0px 5px 4px $hover-shadow-color
+
+  &__user-button-wrapper
+    position: relative
+
+    height: 50px
+    width: 50px
+    margin: 30px 25px
+
+    list-style: none
+
+    &--active::before
+      content: ""
+      position: absolute
+      left: -27px
+      top: 25px
+      display: inline-block
+
+      width: 4px
+      height: 4px
+
+      border-radius: 2px
+      background: #2399f1
+
+  &__service-buttons-wrapper
+    position: relative
+
+  &__service-buttons
+    position: fixed
+    bottom: 24px
+
+    height: 16px
+    margin: 0 26px
+
+  &__grid-button
+    margin-right: 16px
+
+  &__menu
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    width: 250px
+
+    background-color: #222c3c
+
+    @media screen and (max-width: 1579px)
+     display: none
