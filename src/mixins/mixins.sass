@@ -1,3 +1,5 @@
+@import '../initialStyles/vars'
+
 @mixin service-button-styles
   height: 16px
   width: 16px
@@ -6,6 +8,6 @@
 
   background: none
   cursor: pointer
-  transition: filter 0.3s
+  transition: filter $transition-timer
   &:hover
     filter: brightness(150%)

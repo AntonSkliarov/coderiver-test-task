@@ -1,3 +1,5 @@
+@import '../../initialStyles/vars'
+
 .header
   grid-area: header
   display: flex
@@ -9,7 +11,7 @@
   padding: 0 30px
   margin-bottom: 30px
 
-  background-color: #ffffff
+  background-color: #fff
 
   &__title
     color: #354052
@@ -43,7 +45,7 @@
 
     background: none
 
-    transition: filter 0.3s
+    transition: filter $transition-timer
     cursor: pointer
     &:hover
       filter: brightness(40%)

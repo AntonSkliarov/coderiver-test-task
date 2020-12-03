@@ -1,3 +1,5 @@
+@import '../../initialStyles/vars'
+
 .sidebar
   position: fixed
   top: 0
@@ -7,7 +9,7 @@
   height: 100%
   width: 350px
 
-  background-color: #1d2531
+  background-color: $sidebar-background-color
 
   @media screen and (max-width: 1579px)
     width: 100px
@@ -24,9 +26,9 @@
 
     background: none
     cursor: pointer
-    transition: box-shadow 0.3s
+    transition: box-shadow $transition-timer
     &:hover
-      box-shadow: 0px 0px 5px 4px #a79f9f
+      box-shadow: 0px 0px 5px 4px $hover-shadow-color
 
   &__user-button-wrapper
     position: relative

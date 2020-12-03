@@ -1,3 +1,5 @@
+@import '../../initialStyles/vars'
+
 .navigation
   font-family: "Source Sans Pro Semibold"
 
@@ -36,7 +38,7 @@
     margin-top: 5px
     border-radius: 12px
 
-    background-color: #2b9ef6
+    background-color: $notifications-color
 
     color: #fff
     line-height: 25px
@@ -45,7 +47,7 @@
   &__menu-item-link
     text-decoration: none
     color: #f2f2f3
-    transition: transform 0.3s
+    transition: transform $transition-timer
     &:hover
       transform: scale(1.1)
 

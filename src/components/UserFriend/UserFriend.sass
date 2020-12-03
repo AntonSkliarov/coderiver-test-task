@@ -1,3 +1,5 @@
+@import '../../initialStyles/vars'
+
 .user-friend
   display: flex
   position: relative
@@ -17,9 +19,9 @@
 
     background: none
     cursor: pointer
-    transition: box-shadow 0.3s
+    transition: box-shadow $transition-timer
     &:hover
-      box-shadow: 0px 0px 5px 4px #a79f9f
+      box-shadow: 0px 0px 5px 4px $hover-shadow-color
 
   &__image
     height: 40px
@@ -47,5 +49,5 @@
     border-radius: 12px
 
     color: #fff
-    background-color: #2499f2
+    background-color: $notifications-color
     text-align: center
