@@ -6,12 +6,14 @@ export function UserFriend({ friend }) {
   return (
     <div className="user-friend">
       <li className="user-friend__item">
-        <img
-          className="user-friend__image"
-          src={friend.image}
-          alt={friend.name}
-          title={friend.name}
-        />
+        <button className="user-friend__button" type="button">
+          <img
+            className="user-friend__image"
+            src={friend.image}
+            alt={friend.name}
+            title={friend.name}
+          />
+        </button>
         <div className="user-friend__info">
           <p className="user-friend__name">{friend.name}</p>
           {friend.typing === true

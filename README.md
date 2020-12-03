@@ -1,11 +1,13 @@
-# React Starter Pack
+# User Profit Page
 
-To use this template click `Use this template`
+Tech stack: HTML5, SASS(sass syntax), JavaScript, React.
 
-### Available Scripts
+## DEMO
 
-`Deploy` - available to deploy your application to gh-pages
+Click [here](https://antonskliarov.github.io/coderiver-test-task/) for a Demo
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+### Installing
 
-`React router` - available to use dynamic routes to switch between pages
+1. Fork and clone this repository
+2. Run `npm install` in your terminal
+3. Run `npm start`

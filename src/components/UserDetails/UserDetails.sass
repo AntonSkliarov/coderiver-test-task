@@ -1,58 +1,68 @@
 .user-details
+  position: relative
   grid-area: user-details
+
   width: 370px
   height: 685px
-  background-color: #ffffff
   padding: 9px 8px
   margin-bottom: 20px
   margin-left: 10px
-  position: relative
+
+  background-color: #ffffff
+
   @media screen and (max-width: 1330px)
-   display: none
+    display: none
 
   &::after
     content: ""
-    display: inline-block
-    background-image: url('../../images/service-icons/edit-icon.png')
     position: absolute
     top: -9px
     right: -9px
+    display: inline-block
+
     height: 40px
     width: 40px
 
+    background-image: url('../../images/service-icons/edit-icon.png')
+    cursor: pointer
+
   &__main-info-wrapper
-    height: 287px
     position: relative
 
+    height: 287px
+
   &__main-info
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
     position: absolute
     top: 41px
     left: 93px
 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
   &__user-image
     width: 156px
     height: 156px
+
     margin-bottom: 16px
 
   &__user-fullname
+    padding: 1px
+
+    color: #47505c
     font-family: "Source Sans Pro Semibold"
     font-size: 24px
     line-height: 24px
-    padding: 1px
-    color: #47505c
 
   &__user-position
-    font-size: 14px
     color: #b5b5b5
+    font-size: 14px
 
   &__additional-info
     margin: 0 20px 24px 20px
-    border-top: 3px solid #dee7ef
     padding-top: 18px
+    border-top: 3px solid #dee7ef
 
   &__additional-info-email,
   &__additional-info-mobile,
@@ -71,16 +81,16 @@
   &__additional-info-paid-out-title,
   &__additional-info-bio-title,
   &__additional-info-skills-title
+    color: #afb7c7
     font-size: 12px
     line-height: 12px
-    color: #afb7c7
 
   &__additional-info-email-adress,
   &__additional-info-mobile-number,
   &__additional-info-skill-level-text
+    color: #56688a
     font-family: "Source Sans Pro Semibold"
     font-size: 16px
-    color: #56688a
 
   &__additional-info-paid-out-wrapper
     display: flex
@@ -92,9 +102,9 @@
     margin-right: 13px
 
   &__paid-out-limit-numbers
+    color: #353c48
     font-family: "Source Sans Pro Semibold"
     font-size: 14px
-    color: #353c48
     &--blue
       color: #2399f1
 
@@ -107,9 +117,10 @@
   &__additional-info-bio-text
     display: inline-block
     width: 320px
+
+    color: #56688a
     font-size: 14px
     line-height: 20px
-    color: #56688a
 
   &__additional-info-skills-wrapper
     display: flex
@@ -121,15 +132,17 @@
   &__additional-info-skills-teacher,
   &__additional-info-skills-traveler,
   &__additional-info-skills-ios
+    height: 18px
+    padding: 5px 6px 0 8px
+    margin-right: 6px
+    border-radius: 3px
+
+    color: #fff
     font-family: "Source Sans Pro Semibold"
     font-size: 10px
     text-transform: uppercase
-    color: white
-    height: 18px
-    border-radius: 3px
-    padding: 5px 6px 0 8px
     line-height: 10px
-    margin-right: 6px
+
 
   &__additional-info-skills-photography
     background-color: #0474c8

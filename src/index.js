@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './normalize.sass';
-import './reset.sass';
-import './fonts.sass';
+import './initialStyles/normalize.sass';
+import './initialStyles/reset.sass';
+import './initialStyles/fonts.sass';
 import './mixins/mixins.sass';
 import { App } from './App';
 

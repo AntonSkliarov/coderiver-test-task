@@ -1,43 +1,47 @@
 .referrer
   transition: transform 0.4s
+
   @media screen and (max-width: 920px)
     transform: scale(0.8)
     margin: 0
+
   @media screen and (max-width: 650px)
     transform: scale(0.6)
 
   &__table
+    width: 100%
+    padding-top: 18px
+
     border-spacing: 0px
     border-radius: 4px
     border: 1px solid #e6eaee
+
     background-color: #ffffff
-
-    padding-top: 18px
-    width: 100%
-
 
   &__table-header
     text-align: left
 
   &__table-name
+    width: 260px
+    padding-left: 30px
+
     font-size: 24px
     color: #354052
-    padding-left: 30px
-    width: 260px
 
   &__table-header-column-views,
   &__table-header-column-sales,
   &__table-header-column-conversion,
   &__table-header-column-total
-    font-family: "Source Sans Pro Semibold"
-    font-size: 14px
-    color: #7f8fa4
     padding-right: 10px
 
-  &__table-body
+    color: #7f8fa4
     font-family: "Source Sans Pro Semibold"
     font-size: 14px
+
+  &__table-body
     color: #333c48
+    font-family: "Source Sans Pro Semibold"
+    font-size: 14px
 
   &__table-data
     padding-left: 30px
