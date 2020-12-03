@@ -5,7 +5,7 @@ import chart from '../../images/chart/chart.png';
 export function ProfitChart() {
   return (
     <img
-      className="chart"
+      className="profit-chart"
       src={chart}
       alt="Chart"
     />

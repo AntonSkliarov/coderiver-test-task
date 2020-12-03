@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Header.sass';
-// import dropdownIcon from '../../images/service-icons/dropdown.png';
+import dropdownIcon from '../../images/service-icons/dropdown.png';
 
 export function Header({ selectedUser }) {
   const { name, surname } = selectedUser;
@@ -23,19 +23,9 @@ export function Header({ selectedUser }) {
           <p className="header__user-name">{fullName}</p>
           <p className="header__user-role">{selectedUser.role}</p>
         </div>
-        {/* <input
-          type="checkbox"
-          id="show-user-details"
-          className="header__show-user-details"
-        />
-        <label
-          className="header__show-user-details-label"
-          id="show-user-details-label"
-          htmlFor="show-user-details"
-          title="Show user details"
-        >
+        <button className="header__user-info-dropdown-button" type="button">
           <img src={dropdownIcon} alt="Dropdown icon" />
-        </label> */}
+        </button>
       </div>
     </div>
   );

@@ -1,4 +1,9 @@
-.chart
-  height: 320px
-  width: 770px
-  margin: 0 40px 19px 30px
+.profit-chart
+  width: 100%
+  margin-bottom: 19px
+  transition: transform 0.4s
+  @media screen and (max-width: 920px)
+    transform: scale(0.8)
+    margin: 0
+  @media screen and (max-width: 650px)
+    transform: scale(0.6)

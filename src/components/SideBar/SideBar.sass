@@ -8,6 +8,8 @@
   background-color: #1d2531
   display: flex
 
+  @media screen and (max-width: 1579px)
+    width: 100px
 
   &__users-buttons
     width: 100px
@@ -52,8 +54,10 @@
     margin-right: 16px
 
   &__menu
-    background: #222c3c
+    background-color: #222c3c
     width: 250px
     display: flex
     flex-direction: column
     justify-content: space-between
+    @media screen and (max-width: 1579px)
+     display: none

@@ -10,7 +10,17 @@ body
   display: grid
   grid-template-columns: 350px auto 410px
   grid-template-areas: "sidebar header header""sidebar main user-details""sidebar main user-details""sidebar main user-events"
+  @media screen and (max-width: 1579px)
+    grid-template-columns: 100px auto 410px
+  @media screen and (max-width: 1330px)
+    grid-template-columns: 100px auto 0px
+  @media screen and (max-width: 920px)
+    grid-template-columns: 100px auto 0px
 
   .main
     grid-area: main
     margin: 0 auto
+    justify-content: center
+    padding: 0 22px 0 32px
+    @media screen and (max-width: 920px)
+      padding: 0

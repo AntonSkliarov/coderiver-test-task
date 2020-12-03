@@ -115,7 +115,7 @@ export function UserDetails({ selectedUser }) {
 UserDetails.propTypes = {
   selectedUser: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    surname: PropTypes.number.isRequired,
+    surname: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -19,7 +19,7 @@ export function Referrer() {
         </thead>
         <tbody className="referrer__table-body">
           {referrer.map(row => (
-            <tr className="referrer__table-row">
+            <tr className="referrer__table-row" key={row.id}>
               <td className="referrer__table-data">{row.name}</td>
               <td>{row.views}</td>
               <td>{row.sales}</td>

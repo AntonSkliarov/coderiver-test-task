@@ -5,6 +5,7 @@ export const referrer = [
     sales: 12,
     converion: '10.5%',
     total: 50,
+    id: 1,
   },
   {
     name: 'Direct, email, IM',
@@ -12,6 +13,7 @@ export const referrer = [
     sales: 24,
     converion: '25%',
     total: 10,
+    id: 2,
   },
   {
     name: 'Recommended',
@@ -19,6 +21,7 @@ export const referrer = [
     sales: 5,
     converion: '100%',
     total: 10,
+    id: 3,
   },
   {
     name: 'Dribbble',
@@ -26,6 +29,7 @@ export const referrer = [
     sales: 0,
     converion: '0.0%',
     total: 0,
+    id: 4,
   },
   {
     name: 'google.co.uk',
@@ -33,6 +37,7 @@ export const referrer = [
     sales: 0,
     converion: '0.0%',
     total: 0,
+    id: 5,
   },
   {
     name: 'google.com.tr',
@@ -40,6 +45,7 @@ export const referrer = [
     sales: 0,
     converion: '0.0%',
     total: 0,
+    id: 6,
   },
   {
     name: 'mail.google.com',
@@ -47,6 +53,7 @@ export const referrer = [
     sales: 0,
     converion: '0.0%',
     total: 0,
+    id: 7,
   },
   {
     name: 'facebook.com',
@@ -54,5 +61,6 @@ export const referrer = [
     sales: 0,
     converion: '0.0%',
     total: 0,
+    id: 8,
   },
 ];
